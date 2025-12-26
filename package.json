@@ -47,7 +47,7 @@
 	},
 	"dependencies": {
 		"@types/uuid": "^10.0.0",
-		"lingapp-revisao-redacao": "workspace:*",
+		"lingapp-revisao-redacao": "^1.0.11",
 		"lucide-react": "^0.483.0",
 		"pdf-lib": "^1.17.1",
 		"pdfjs-dist": "^4.0.189",

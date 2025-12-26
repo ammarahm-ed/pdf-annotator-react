@@ -170,9 +170,6 @@ export const AnnotationLayer: React.FC<AnnotationLayerProps> = ({
   // Use original PDF dimensions for the viewBox to ensure correct scaling
   const viewBox = `0 0 ${originalWidth} ${originalHeight}`;
 
-  // Check if the pending pencil annotation is for this page
-  const hasPendingPencilForPage = pendingPencilAnnotation && pendingPencilAnnotation.pageIndex === pageIndex;
-
   return (
     <div
       className="absolute top-0 left-0 w-full h-full pointer-events-none"

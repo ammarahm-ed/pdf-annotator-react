@@ -17,9 +17,16 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'pdfjs-dist', 'pdf-lib'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', 'pdfjs-dist', 'pdf-lib'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'react/jsx-runtime',
+        },
+      },
     },
     outDir: 'dist',
     sourcemap: true,
   },
-}); 
+});
